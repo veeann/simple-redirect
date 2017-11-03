@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Redirect",
+  "description": "This extension will change entered URLs based on a mapping.",
+  "version": "1.0",
+
+  "options_page": "options.html",
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "browser_action": {
+   "default_icon": "icon.png"
+  },
+
+  "permissions": [
+   "activeTab",
+   "storage",
+   "tabs",
+   "webRequest",
+   "webRequestBlocking",
+   "<all_urls>"
+   ]
+}
